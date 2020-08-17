@@ -90,3 +90,12 @@ C:\Users\Ahmed Saad\source\repos\Resto\Resto\Resto.Web\bin\Autofac.Integration.M
 C:\Users\Ahmed Saad\source\repos\Resto\Resto\Resto.Web\bin\Microsoft.Bcl.AsyncInterfaces.xml
 C:\Users\Ahmed Saad\source\repos\Resto\Resto\Resto.Web\bin\System.Runtime.CompilerServices.Unsafe.xml
 C:\Users\Ahmed Saad\source\repos\Resto\Resto\Resto.Web\bin\System.Threading.Tasks.Extensions.xml
+C:\Users\Ahmed Saad\source\repos\Resto\Resto\Resto.Web\bin\System.Net.Http.Formatting.dll
+C:\Users\Ahmed Saad\source\repos\Resto\Resto\Resto.Web\bin\System.Web.Http.dll
+C:\Users\Ahmed Saad\source\repos\Resto\Resto\Resto.Web\bin\System.Web.Http.WebHost.dll
+C:\Users\Ahmed Saad\source\repos\Resto\Resto\Resto.Web\bin\System.Net.Http.Formatting.xml
+C:\Users\Ahmed Saad\source\repos\Resto\Resto\Resto.Web\bin\System.Web.Http.xml
+C:\Users\Ahmed Saad\source\repos\Resto\Resto\Resto.Web\bin\System.Web.Http.WebHost.xml
+C:\Users\Ahmed Saad\source\repos\Resto\Resto\Resto.Web\bin\Autofac.Integration.WebApi.dll
+C:\Users\Ahmed Saad\source\repos\Resto\Resto\Resto.Web\bin\Autofac.Integration.WebApi.pdb
+C:\Users\Ahmed Saad\source\repos\Resto\Resto\Resto.Web\bin\Autofac.Integration.WebApi.xml
