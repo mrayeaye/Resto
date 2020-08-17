@@ -21,5 +21,11 @@ namespace Resto.Web.Controllers
             var model = db.getAll();
             return View(model);
         }
+
+        public ActionResult Details(int id)
+        {
+            var model = db.get(id);
+            return View(model);
+        }
     }
 }

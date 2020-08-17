@@ -18,9 +18,16 @@ namespace Resto.Data.Services
                 new Restaurant{Id = 3,Name = "Jamba Juice", Cuisine = CuisineType.American}
             };
         }
+
+        public Restaurant get(int id)
+        {
+            return rests.FirstOrDefault(r => r.Id == id);
+        }
+
         public IEnumerable<Restaurant> getAll()
         {
             return rests.OrderBy(r => r.Name);
         }
+
     }
 }
