@@ -25,6 +25,8 @@ namespace Resto.Web.Controllers
         public ActionResult Details(int id)
         {
             var model = db.get(id);
+            if (model == null)
+                return View("NotFound");
             return View(model);
         }
     }
