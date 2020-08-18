@@ -19,6 +19,12 @@ namespace Resto.Data.Services
             };
         }
 
+        public void Add(Restaurant rest)
+        {
+            rests.Add(rest);
+            rest.Id = rests.Max(r => r.Id) + 1;
+        }
+
         public Restaurant get(int id)
         {
             return rests.FirstOrDefault(r => r.Id == id);
@@ -28,6 +34,8 @@ namespace Resto.Data.Services
         {
             return rests.OrderBy(r => r.Name);
         }
+
+
 
     }
 }

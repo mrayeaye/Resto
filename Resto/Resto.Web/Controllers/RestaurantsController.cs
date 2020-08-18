@@ -1,4 +1,5 @@
-﻿using Resto.Data.Services;
+﻿using Resto.Data.Models;
+using Resto.Data.Services;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -30,8 +31,16 @@ namespace Resto.Web.Controllers
             return View(model);
         }
 
+        [HttpGet]
         public ActionResult Create()
         {
+            return View();
+        }
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public ActionResult Create(Restaurant rest)
+        {
+            db.Add(rest);
             return View();
         }
     }

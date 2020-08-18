@@ -10,5 +10,7 @@ namespace Resto.Data.Services
     {
         IEnumerable<Restaurant> getAll();
         Restaurant get(int id);
+
+        void Add(Restaurant rest);
     }
 }
