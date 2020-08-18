@@ -49,5 +49,27 @@ namespace Resto.Web.Controllers
             }
             return View();
         }
+
+        [HttpGet]
+        public ActionResult Edit(int id)
+        {
+            var model = db.get(id);
+            if (model == null)
+                return HttpNotFound();
+
+            return View(model);
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public ActionResult Edit (Restaurant rest)
+        {
+            if (ModelState.IsValid)
+            {
+                db.Update(rest);
+                return RedirectToAction("Details", new { id = rest.Id });
+            }
+            return View();
+        }
     }
 }

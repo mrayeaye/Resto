@@ -35,7 +35,15 @@ namespace Resto.Data.Services
             return rests.OrderBy(r => r.Name);
         }
 
+        public void Update(Restaurant rest)
+        {
+            var exist = get(rest.Id);
 
-
+            if (exist != null)
+            {
+                exist.Name = rest.Name;
+                exist.Cuisine = rest.Cuisine;
+            }
+        }
     }
 }
