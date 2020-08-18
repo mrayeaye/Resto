@@ -40,8 +40,7 @@ namespace Resto.Web.Controllers
         [ValidateAntiForgeryToken]
         public ActionResult Create(Restaurant rest)
         {
-            if (String.IsNullOrEmpty(rest.Name))
-                ModelState.AddModelError(nameof(rest.Name), "The Name is Required.");
+          
 
             if (ModelState.IsValid)
             {
