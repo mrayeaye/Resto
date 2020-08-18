@@ -45,7 +45,7 @@ namespace Resto.Web.Controllers
             if (ModelState.IsValid)
             {
                 db.Add(rest);
-                return View();
+                return RedirectToAction("Details",new { id = rest.Id});
             }
             return View();
         }
