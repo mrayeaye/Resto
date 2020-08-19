@@ -1,6 +1,5 @@
 C:\Users\Ahmed Saad\source\repos\Resto\Resto\Resto.Data\bin\Debug\Resto.Data.dll
 C:\Users\Ahmed Saad\source\repos\Resto\Resto\Resto.Data\bin\Debug\Resto.Data.pdb
-C:\Users\Ahmed Saad\source\repos\Resto\Resto\Resto.Data\obj\Debug\Resto.Data.csprojAssemblyReference.cache
 C:\Users\Ahmed Saad\source\repos\Resto\Resto\Resto.Data\obj\Debug\Resto.Data.csproj.CoreCompileInputs.cache
 C:\Users\Ahmed Saad\source\repos\Resto\Resto\Resto.Data\obj\Debug\Resto.Data.dll
 C:\Users\Ahmed Saad\source\repos\Resto\Resto\Resto.Data\obj\Debug\Resto.Data.pdb

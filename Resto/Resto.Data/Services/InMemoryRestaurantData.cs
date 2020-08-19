@@ -25,6 +25,11 @@ namespace Resto.Data.Services
             rest.Id = rests.Max(r => r.Id) + 1;
         }
 
+        public void Delete(int id)
+        {
+            throw new NotImplementedException();
+        }
+
         public Restaurant get(int id)
         {
             return rests.FirstOrDefault(r => r.Id == id);

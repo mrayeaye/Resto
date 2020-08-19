@@ -71,5 +71,25 @@ namespace Resto.Web.Controllers
             }
             return View();
         }
+
+        [HttpGet]
+        public ActionResult Delete(int id)
+        {
+            var model = db.get(id);
+            if (model == null)
+            {
+                return View("NotFound");
+            }
+            return View(model);
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public ActionResult Delete (int id, FormCollection form)
+        {
+                db.Delete(id);
+                return RedirectToAction("Index");
+        }
+
     }
 }

@@ -22,6 +22,16 @@ namespace Resto.Data.Services
             db.SaveChanges();
         }
 
+        public void Delete(int id)
+        {
+            var rest = get(id);
+            if (rest != null)
+            {
+                db.Restaurants.Remove(rest);
+                db.SaveChanges();
+            }
+        }
+
         public Restaurant get(int id)
         {
             return db.Restaurants.FirstOrDefault(r => r.Id == id);
