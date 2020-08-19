@@ -67,6 +67,7 @@ namespace Resto.Web.Controllers
             if (ModelState.IsValid)
             {
                 db.Update(rest);
+                TempData["Message"] = "Saved";
                 return RedirectToAction("Details", new { id = rest.Id });
             }
             return View();
